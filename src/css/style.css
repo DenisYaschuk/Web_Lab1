@@ -1,0 +1,133 @@
+html,body{
+    box-sizing: border-box;
+    margin: 0px;
+    overflow-x:hidden;
+    height: 100%;
+    display:flex;
+    flex-flow:column;
+}
+.solidBorder{
+    box-sizing: border-box;
+    border: solid 1px black;
+}
+header{
+    display: flex;
+    background-color: #C6D9F1;
+    height: 7rem;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    background-color: #C6D9F1;
+    width: 100%;
+    height: 7rem;
+    bottom: 0;
+    justify-content: flex-end;
+    align-items: center;
+}
+.mainContent{
+    margin-top: 7rem;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.heading{
+    background-color: white;
+}
+.headerHeading{
+    margin-left: 2rem;
+}
+.footerHeading{
+    margin-right: 2rem;
+}
+.leftSection{
+    height: 100%;
+    width: 25%;
+    background-color: #FDE9D9;
+}
+.centerSection{
+    height: 100%;
+    width: 15%;
+    background-color: #EAF1DD;
+}
+.rightAside{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.rightAsideHeader{
+    position: relative;
+    display: flex;
+    background-color: #FDE9D9;
+    width: 100%;
+    min-height: 7rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rightAsideHeaderImg{
+    margin-bottom: 1rem;
+
+}
+.rightAsideBottom{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+}
+.rightAsideBottomRight{
+    width: 40%;
+    height: 100%;
+    background-color: #EAF1DD;
+}
+.rightAsideBottomLeft{
+    width: 40%;
+    height: 100%;
+    background-color: #EAF1DD;
+}
+.loremParagraph{
+    padding: 0 2rem;
+}
+.navUl{
+    list-style: none;
+}
+.navUl li{
+    margin-bottom: 1rem;
+}
+.currentPage{
+    color: red;
+}
+a {
+    color: coral;
+    text-decoration: none;
+}
+.hoverLink:hover{
+    color:blue;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px){
+    .loremParagraph{
+        padding: 0;
+    }
+    .centerSection{
+        width: 20%;
+    }
+    .rightAside{
+        width: 50%;
+    }
+    .rightAsideBottomRight{
+        width: 47%;
+    }
+    .rightAsideBottomLeft{
+        width: 47%;
+    }
+    .navUl{
+        padding-left: 0;
+    }
+}
