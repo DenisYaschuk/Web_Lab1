@@ -30,7 +30,6 @@ header{
 }
 .mainContent{
     margin-top: 7rem;
-    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -61,7 +60,7 @@ header{
     flex-direction: column;
 }
 .rightAsideHeader{
-    position: relative;
+    position: static;
     display: flex;
     background-color: #FDE9D9;
     width: 100%;
